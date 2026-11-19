@@ -8,13 +8,13 @@ var UserInfo = require('../../Models/UserInfo');
 var DaiLy = require('../../Models/DaiLy');
 var OTP = require('../../Models/OTP');
 var Phone    = require('../../Models/Phone');
-const TelegramBot = require('node-telegram-bot-api');
+// const TelegramBot = require('node-telegram-bot-api');
 
 // replace the value below with the Telegram token you receive from @BotFather
-const token = '1923689658:AAGXZNkbUy874FXiPjIuSEwuoFLbOSxqHGs';
+// const token = '1923689658:AAGXZNkbUy874FXiPjIuSEwuoFLbOSxqHGs';
 
 // Create a bot that uses 'polling' to fetch new updates
-const bot = new TelegramBot(token, {polling: false});
+// const bot = new TelegramBot(token, {polling: false});
 
 var secret = config.secret;
 module.exports = function(req, res) {
