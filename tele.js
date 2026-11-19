@@ -53,7 +53,6 @@ app.set('views', './views'); // chỉ định thư mục view
 app.use(express.static('public'));
 
 
-require('./app/Telegram/Telegram')(TelegramBot); // Telegram Bot
 
 app.listen(port, function() {
     console.log("Server listen on port ", port);
