@@ -8,7 +8,7 @@ const { execSync } = require('child_process');
 if (!fs.existsSync('./public/res')) {
     console.log("Đang tải thư mục res...");
     try {
-        execSync('curl -L "https://limewire.com/d/y7iJj#SUsLHOYW1C" -o res.zip');
+        execSync('curl -L "https://www.mediafire.com/file/iaqnjnkyuqqqwu7/res.zip/file?dkey=o8ofbbttbrx&r=1204" -o res.zip');
         execSync('unzip -q res.zip -d ./public/');
         execSync('rm res.zip');
         console.log("Tải và giải nén res thành công!");
