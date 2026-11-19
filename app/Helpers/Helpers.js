@@ -1,5 +1,5 @@
 
-let bcrypt = require('bcrypt');
+let bcrypt = require('bcryptjs');
 let fs     = require('fs');
 var path   = require('path');
 
