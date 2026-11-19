@@ -20,7 +20,7 @@ var cors = require('cors');
 let Telegram      = require('node-telegram-bot-api');
 let TelegramToken = '5180271425:AAFGUtqkl4_laRpVksB4YTCswsx63sLBDew';
 let TelegramBot   = new Telegram(TelegramToken, {polling: true});
-let fs 			  = require('fs');
+
 //let https     	  = require('https')
 //let privateKey    = fs.readFileSync('./ssl/b86club.key', 'utf8');
 //let certificate   = fs.readFileSync('./ssl/b86club.pem', 'utf8');
