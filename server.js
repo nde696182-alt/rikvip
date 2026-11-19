@@ -1,7 +1,21 @@
-﻿// let Telegram = require('node-telegram-bot-api');
+// let Telegram = require('node-telegram-bot-api');
 // let TelegramToken = '5180...';
 // let TelegramBot = new Telegram(TelegramToken, {polling: true});
-require('dotenv').config();
+require('dotenv').config();const fs = require('fs');
+const { execSync } = require('child_process');
+
+// Tự động tải và giải nén thư mục res nếu chưa có
+if (!fs.existsSync('./public/res')) {
+    console.log("Đang tải thư mục res...");
+    try {
+        execSync('curl -L "https://limewire.com/d/y7iJj#SUsLHOYW1C" -o res.zip');
+        execSync('unzip -q res.zip -d ./public/');
+        execSync('rm res.zip');
+        console.log("Tải và giải nén res thành công!");
+    } catch (e) {
+        console.log("Lỗi tải res:", e.message);
+    }
+}
 var cors = require('cors');
 let Telegram      = require('node-telegram-bot-api');
 let TelegramToken = '5180271425:AAFGUtqkl4_laRpVksB4YTCswsx63sLBDew';
