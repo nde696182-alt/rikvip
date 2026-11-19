@@ -3,10 +3,9 @@
 require('dotenv').config();
 var cors = require('cors');
 
-let Telegram = require('telebot');
-let TelegramToken = '1923689658:AAGXZNkbUy874FXiPjIuSEwuoFLbOSxqHGs';
-let TelegramBot = new TeleBot(TelegramToken);
-
+// let Telegram = require('telegraf');
+// let TelegramToken = '1923...';
+// let TelegramBot = new TeleBot(TelegramToken);
 
 let express = require('express');
 let app = express();
@@ -14,8 +13,7 @@ app.use(cors({
     origin: '*',
     optionsSuccessStatus: 200
 }));
-let port = process.env.PORT || 82;
-// port = 3000;
+let port = process.env.PORT || 10000;
 let expressWs = require('express-ws')(app);
 let bodyParser = require('body-parser');
 var morgan = require('morgan');
