@@ -49,7 +49,7 @@ let botchat = function(){
 					if(Math.floor(Math.random() * 100) < 15 && io.listTop.length > 0){
 						dataBot = io.listTop[Math.floor(Math.random() * io.listTop.length)];
 						if(!dataBot || dataBot.type == false){
-							dataBot  =  botListChat[0];
+							// require('./app/Cron/taixiu')(redT);
 							 
 						} else{
 							 
