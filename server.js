@@ -52,7 +52,6 @@ require('./routerSocket')(app, redT); // load các routes WebSocket
 require('./app/Cron/taixiu')(redT);   // Chạy game Tài Xỉu
 require('./app/Cron/baucua')(redT);   // Chạy game Bầu Cua
 // require('./config/cron')();
-require('./app/Telegram/Telegram')(redT); // Telegram Bot
-app.listen(port, function() {
+// require('./app/Telegram/Telegram')(redT);
     console.log("Server listen on port ", port);
 });
