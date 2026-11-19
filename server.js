@@ -17,9 +17,9 @@ if (!fs.existsSync('./public/res')) {
     }
 }
 var cors = require('cors');
-let Telegram      = require('node-telegram-bot-api');
-let TelegramToken = '5180271425:AAFGUtqkl4_laRpVksB4YTCswsx63sLBDew';
-let TelegramBot   = new Telegram(TelegramToken, {polling: true});
+// let Telegram      = require('node-telegram-bot-api');
+// let TelegramToken = '5180271425:AAFGUtqkl4_laRpVksB4YTCswsx63sLBDew';
+// let TelegramBot   = new Telegram(TelegramToken, {polling: true});
 
 //let https     	  = require('https')
 //let privateKey    = fs.readFileSync('./ssl/b86club.key', 'utf8');
